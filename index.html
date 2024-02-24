@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header id="header">
         <!-- NavBar Section -->
         <div class="flex justify-center pt-5 pb-5">
             <div class="navbar bg-base-100 w-[1170px] ">
@@ -66,7 +66,7 @@
                         <p class="text-white inter-regular text-[8px] lg:text-xl lg:w[691px]">Yes, you can run unit
                             tests and view the results directly within the app. The<br>integrated
                             testing features allow for a streamlined .</p>
-                        <button
+                        <button onclick="bannerToMainSection()"
                             class="btn btn-sm text-xs lg:w-[170px] lg:h-[65px] bg-[#1DD100] roboto-bold lg:text-xl text-black">Buy
                             Tickets</button>
                     </div>
@@ -108,7 +108,7 @@
         </div>
     </header>
     <main>
-        <section class="">
+        <section  id="mainSec" class="bigsection">
             <!-- section -> Best Offer For You -->
             <section class="pt-[50px] lg:pt-[130px]">
                 <h1 class="text-3xl lg:text-4xl raleway-bold text-center text-[#030712]">Best offers for you</h1>
@@ -154,7 +154,7 @@
             </section>
 
             <!-- Big section -->
-            <section
+            <section id="main-section"
                 class="bg-[#F7F8F8] border-t-2 border-b-0 border-[#1DD100] rounded-[40px] rounded-b-none lg:rounded-t-[80px] mt-36">
                 <section class="text-center mt-28 space-y-3">
                     <h1 class="raleway-bold text-[40px] text-[#030712]">P.H Paribahan</h1>
@@ -182,7 +182,7 @@
                             <div
                                 class="flex gap-2 bg-[#1DD10026] w-[180px] h-[56px] justify-center items-center rounded-2xl">
                                 <img class="w-[28px] h-[28px]" src="images/seat-green.png" alt="">
-                                <p class="text-[#1DD100] inter-medium text-lg"><span>40</span> Seats left</p>
+                                <p class="text-[#1DD100] inter-medium text-lg"><span id="decrease-the-seat">40</span> Seats left</p>
                             </div>
                         </div>
                         <div class="flex justify-center mt-5">
@@ -263,139 +263,99 @@
                             <button class="btn w-[110px] h-[56px] mr-24 lg:mr-10 mb-6 mt-6"><img src="images/Vector.png"
                                     alt=""></button>
                         </div>
-                        <div class="flex flex-col lg:flex-row lg:gap-24 pl-6">
+                        <div id="experiment" class="flex flex-col lg:flex-row lg:gap-24 pl-6">
                             <div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">A</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A2</button>
+                                    <button id="A1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A1</button>
+                                    <button id="A2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">B</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B2</button>
+                                    <button id="B1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B1</button>
+                                    <button id="B2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">C</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C2</button>
+                                    <button id="C1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C1</button>
+                                    <button id="C2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">D</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D2</button>
+                                    <button id="D1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D1</button>
+                                    <button id="D2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">E</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E2</button>
+                                    <button id="E1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E1</button>
+                                    <button id="E2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">F</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F2</button>
+                                    <button id="F1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F1</button>
+                                    <button id="F2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">G</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G2</button>
+                                    <button id="G1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G1</button>
+                                    <button id="G2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">H</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H2</button>
+                                    <button id="H1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H1</button>
+                                    <button id="H2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H2</button>
                                 </div>
                                 <div class="flex items-center gap-10">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">I</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I2</button>
+                                    <button id="I1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I1</button>
+                                    <button id="I2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I2</button>
                                 </div>
                                 <div class="flex items-center gap-9">
                                     <p class="inter-medium text-lg text-[#03071280] pb-6">J</p>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J1</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J2</button>
+                                    <button id="J1" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J1</button>
+                                    <button id="J2" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J2</button>
                                 </div>
                             </div>
-                            <div class="pl-10 lg:pl-0">
+                            <div id="second-experiment" class="pl-10 lg:pl-0">
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A4</button>
+                                    <button id="A3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A3</button>
+                                    <button id="A4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">A4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B4</button>
+                                    <button id="B3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B3</button>
+                                    <button id="B4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">B4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C4</button>
+                                    <button id="C3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C3</button>
+                                    <button id="C4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">C4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D4</button>
+                                    <button id="D3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D3</button>
+                                    <button id="D4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">D4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E4</button>
+                                    <button id="E3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E3</button>
+                                    <button id="E4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">E4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F4</button>
+                                    <button id="F3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F3</button>
+                                    <button id="F4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">F4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G4</button>
+                                    <button id="G3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G3</button>
+                                    <button id="G4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">G4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H4</button>
+                                    <button id="H3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H3</button>
+                                    <button id="H4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">H4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I4</button>
+                                    <button id="I3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I3</button>
+                                    <button id="I4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">I4</button>
                                 </div>
                                 <div class="flex gap-9">
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J3</button>
-                                    <button
-                                        class="btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J4</button>
+                                    <button id="J3" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J3</button>
+                                    <button id="J4" class="per-seat btn w-[110px] inter-medium text-lg text-[#03071280] h-[56px] bg-[#F7F8F8] mb-6">J4</button>
                                 </div>
                             </div>
                         </div>
@@ -413,8 +373,8 @@
                         <div class="flex lg:justify-center">
                             <div class="lg:w-[400px] bg-[#F7F8F8] mt-12 rounded-xl">
                                 <div class="flex justify-between px-14 pt-6 pb-2">
-                                    <p class="inter-medium text-lg text-[#030712]">Seat <button
-                                            class="btn btn-xs text-xs inter-bold text-white bg-[#1DD100]">2</button></p>
+                                    <p class="inter-medium text-lg text-[#030712]">Seat <button id="increase-the-seat"
+                                            class="btn btn-xs text-xs inter-bold text-white bg-[#1DD100]">0</button></p>
                                     <p class="inter-medium text-lg text-[#030712]">Class</p>
                                     <p class="inter-medium text-lg text-[#030712]">Price</p>
                                 </div>
@@ -422,23 +382,28 @@
                                     <div class="border-b-2 border-dashed w-[350px]"></div>
                                 </div>
                                 <div class="pb-2">
-                                    <div class="flex justify-between px-14 pt-2">
-                                        <p class="inter-regular text-[16px] text-[#03071299]">A1</p>
+                                    <div id="question-mark" class="flex justify-between px-14 pt-2">
+                                        <p class="inter-regular text-[16px] text-[#03071299]">?</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">Economoy</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">550</p>
                                     </div>
-                                    <div class="flex justify-between px-14 pt-2">
-                                        <p class="inter-regular text-[16px] text-[#03071299]">B2</p>
+                                    <div id="first-ticket" class="flex justify-between px-14 pt-2 hidden">
+                                        <p id="first-ticket-buy" class="inter-regular text-[16px] text-[#03071299]">A1</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">Economoy</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">550</p>
                                     </div>
-                                    <div class="flex justify-between px-14 pt-2">
-                                        <p class="inter-regular text-[16px] text-[#03071299]">C3</p>
+                                    <div id="second-ticket" class="flex justify-between px-14 pt-2 hidden">
+                                        <p id="second-ticket-buy" class="inter-regular text-[16px] text-[#03071299]">B2</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">Economoy</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">550</p>
                                     </div>
-                                    <div class="flex justify-between px-14 pt-2">
-                                        <p class="inter-regular text-[16px] text-[#03071299]">D4</p>
+                                    <div id="third-ticket" class="flex justify-between px-14 pt-2 hidden">
+                                        <p id="third-ticket-buy" class="inter-regular text-[16px] text-[#03071299]">C3</p>
+                                        <p class="inter-regular text-[16px] text-[#03071299]">Economoy</p>
+                                        <p class="inter-regular text-[16px] text-[#03071299]">550</p>
+                                    </div>
+                                    <div id="fourth-ticket" class="flex justify-between px-14 pt-2 hidden">
+                                        <p id="fourth-ticket-buy" class="inter-regular text-[16px] text-[#03071299]">D4</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">Economoy</p>
                                         <p class="inter-regular text-[16px] text-[#03071299]">550</p>
                                     </div>
@@ -448,18 +413,18 @@
                                 </div>
                                 <div class="px-14 flex justify-between py-4">
                                     <p class="inter-medium text-lg text-[#030712]">Total Price</p>
-                                    <p class="inter-medium text-lg text-[#030712]">BDT <span>1100</span></p>
+                                    <p class="inter-medium text-lg text-[#030712]">BDT <span id="total-cost">0</span></p>
                                 </div>
-                                <div class="flex justify-center">
-                                    <input class="w-[150px] lg:w-[220px] h-[58px] rounded-l-xl pl-4 outline-0"
+                                <div id="discount" class="flex justify-center">
+                                    <input id="input-section" class="w-[150px] lg:w-[220px] h-[58px] rounded-l-xl pl-4 outline-0"
                                         type="text" placeholder="Have any copupon?">
                                     <div
                                         class="w-[100px] h-[58px] bg-white flex justify-center items-center rounded-r-xl">
-                                        <button
+                                        <button id="button-pro" disabled
                                             class="btn bg-[#1DD100] inter-semibold inter-[16px] text-white">Apply</button>
                                     </div>
                                 </div>
-                                <div role="alert" class="alert alert-success mx-8 w-[335px] hidden">
+                                <div id="Successfully" role="alert" class="alert alert-success mx-8 w-[335px] hidden">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="stroke-current shrink-0 h-6 w-6 text-white" fill="none"
                                         viewBox="0 0 24 24">
@@ -470,7 +435,7 @@
                                 </div>
                                 <div class="px-14 flex justify-between py-6">
                                     <p class="inter-medium text-lg text-[#030712]">Grand Total</p>
-                                    <p class="inter-medium text-lg text-[#030712]">BDT <span>1100</span></p>
+                                    <p class="inter-medium text-lg text-[#030712]">BDT <span id="grand-total">0</span></p>
                                 </div>
                             </div>
                         </div>
@@ -479,13 +444,13 @@
                             <input type="text" placeholder="Enter your name"
                                 class="input input-bordered w-full max-w-xs" />
                             <p class="inter-semibold text-[16px] py-3">Phone Number*</p>
-                            <input type="text" placeholder="Enter your phone number"
+                            <input id="phone-number" type="number" placeholder="Enter your phone number"
                                 class="input input-bordered w-full max-w-xs" />
                             <p class="inter-semibold text-[16px] py-3">Email ID</p>
                             <input type="text" placeholder="Enter your email id"
                                 class="input input-bordered w-full max-w-xs" />
 
-                            <button
+                            <button onclick="buttonFinish()" disabled id="button-next"
                                 class="btn w-[320px] bg-[#1DD100] raleway-extrabold text-xl text-white mt-7">Next</button>
                         </section>
 
@@ -499,7 +464,7 @@
             </section>
         </section>
 
-        <section class="bg-[#F7F8F8] flex justify-center items-center min-h-screen hidden">
+        <section id="SuccessfullyPaid" class="bg-[#F7F8F8] flex justify-center items-center min-h-screen hidden">
             <div class="lg:w-[718px] lg:h-[481px] bg-white rounded-2xl flex justify-center items-center py-9 lg:py-0">
                 <div class="flex flex-col justify-center items-center space-y-6">
                     <img src="images/success.png" alt="">
@@ -509,14 +474,14 @@
                             you</p>
                             <p class="roboto-light text-[#4A4A4A] text-xl">Shortly you will find a confirmation in your email.</p>
                     </div>
-                    <button class="btn btn-wide bg-[#27AE60] text-white rounded-[32px] roboto-semibold text-xl">Continue</button>
+                    <button onclick="againDo()" class="btn btn-wide bg-[#27AE60] text-white rounded-[32px] roboto-semibold text-xl">Continue</button>
                 </div>
 
             </div>
         </section>
 
     </main>
-    <footer class="bg-black">
+    <footer id="footer" class="bg-black">
         <div class="flex flex-col lg:flex-row lg:justify-between pt-24 lg:px-24">
             <div>
                 <p class="raleway-extrabold text-[36px] text-white text-center lg:text-left">P-Ticket</p>
@@ -548,7 +513,7 @@
         </div>
     </footer>
     <script src="JavaScript/utility.js"></script>
-    <script src="JavaScript/simple.js"></script>
+    <script src="JavaScript/easy.js"></script>
 </body>
 
 </html>
